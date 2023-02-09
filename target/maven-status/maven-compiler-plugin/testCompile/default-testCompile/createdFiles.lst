@@ -1,0 +1,10 @@
+page\SearchResultsPage.class
+testng\CommonConditions.class
+testng\SendEstimationToEmailTest.class
+util\TestListener.class
+testng\GoogleCloudTest.class
+driver\DriverSingleton.class
+page\AbstractPage.class
+page\EmailGeneratorPage.class
+page\PricingCalculatorPage.class
+page\MainPage.class
