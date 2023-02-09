@@ -1,7 +1,8 @@
 package page;
 
 import lombok.Getter;
-import org.openqa.selenium.By;
+import org.apache.log4j.LogManager;
+import org.apache.log4j.Logger;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -12,7 +13,8 @@ import org.openqa.selenium.support.ui.FluentWait;
 @Getter
 public class MainPage extends AbstractPage {
 
-    FluentWait<WebDriver> fluentWait = new FluentWait<>(driver);
+    private final FluentWait<WebDriver> fluentWait = new FluentWait<>(driver);
+    private final Logger log = LogManager.getRootLogger();
 
     @FindBy(xpath = "//button[@class='devsite-snackbar-action']")
     private WebElement cookiesOkBtn;
@@ -31,19 +33,15 @@ public class MainPage extends AbstractPage {
     }
 
     public void openMainPage() {
+        log.info("Opening Google Cloud web page");
         driver.get("https://cloud.google.com/");
     }
 
-//    public void closeCookiesPopUp() {
-//        cookiesOkBtn.click();
-//        fluentWait.until(ExpectedConditions.invisibilityOf(cookiesOkBtn));
-//    }
-
     public void closeCookiesPopUp() {
-
         try {
             if (cookiesOkBtn.isDisplayed()) {
                 cookiesOkBtn.click();
+                log.info("Closing cookies pop-up");
                 fluentWait.until(ExpectedConditions.invisibilityOf(cookiesOkBtn));
             }
         }
@@ -53,14 +51,17 @@ public class MainPage extends AbstractPage {
     }
 
     public void openSearchField() {
+        log.info("Opening Search field");
         searchBtn.click();
     }
 
     public void enterSearchRequest() {
+        log.info("Entering the search request");
         searchField.sendKeys("Google Cloud Platform Pricing Calculator");
     }
 
     public void clickSuggestSearchResult() {
+        log.info("Selecting suggested search results");
         suggestSearchResult.click();
     }
 
