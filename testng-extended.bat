@@ -1,0 +1,1 @@
+java -cp C:/Users/Serhii_Veselov/IdeaProjects/hurt-me-planty/bin;C:/Users/Serhii_Veselov/IdeaProjects/hurt-me-planty/lib/* org.testng.TestNG testng-extended.xml

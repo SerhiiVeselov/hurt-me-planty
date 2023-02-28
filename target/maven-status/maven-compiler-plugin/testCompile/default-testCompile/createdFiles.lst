@@ -1,4 +1,5 @@
 page\SearchResultsPage.class
+util\Highlighter.class
 testng\CommonConditions.class
 testng\SendEstimationToEmailTest.class
 util\TestListener.class
