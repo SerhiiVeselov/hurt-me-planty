@@ -9,6 +9,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.FluentWait;
+import util.Highlighter;
 
 @Getter
 public class MainPage extends AbstractPage {
@@ -40,6 +41,7 @@ public class MainPage extends AbstractPage {
     public void closeCookiesPopUp() {
         try {
             if (cookiesOkBtn.isDisplayed()) {
+                Highlighter.HighlightElement(driver, cookiesOkBtn);
                 cookiesOkBtn.click();
                 log.info("Closing cookies pop-up");
                 fluentWait.until(ExpectedConditions.invisibilityOf(cookiesOkBtn));

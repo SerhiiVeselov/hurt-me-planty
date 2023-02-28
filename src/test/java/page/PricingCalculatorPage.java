@@ -4,10 +4,11 @@ import lombok.Getter;
 import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
 import org.openqa.selenium.*;
-import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.FluentWait;
+import util.Highlighter;
+
 import java.util.ArrayList;
 
 @Getter
@@ -25,52 +26,52 @@ public class PricingCalculatorPage extends AbstractPage {
     @FindBy(id = "myFrame")
     private WebElement myFrame;
 
-    @FindBy(id = "input_92")
+    @FindBy(id = "input_93")
     private WebElement numberOfInstancesField;
 
-    @FindBy(css = "#select_value_label_84")
+    @FindBy(css = "#select_value_label_85")
     private WebElement operatingSystemDrpDwn;
 
-    @FindBy(id = "select_option_94")
+    @FindBy(id = "select_option_95")
     private WebElement debianOperatingSystem;
 
-    @FindBy(css = "#select_value_label_85")
+    @FindBy(css = "#select_value_label_86")
     private WebElement provisioningModelDrpDwn;
 
-    @FindBy(id = "select_option_108")
+    @FindBy(id = "select_option_109")
     private WebElement spotProvisioningModel;
 
-    @FindBy(css = "#select_value_label_88")
+    @FindBy(css = "#select_value_label_89")
     private WebElement machineTypeDrpDwn;
 
-    @FindBy(id = "select_option_430")
+    @FindBy(id = "select_option_431")
     private WebElement n1Standard8MachineType;
 
     @FindBy(xpath = "//md-checkbox[@ng-model='listingCtrl.computeServer.addGPUs']")
     private WebElement addGpuCheckBox;
 
-    @FindBy(id = "select_468")
+    @FindBy(id = "select_467")
     private WebElement gpuTypeDrpDwn;
 
-    @FindBy(id = "select_option_475")
+    @FindBy(id = "select_option_474")
     private WebElement nVidiaTeslaV100Gpu;
 
-    @FindBy(id = "select_value_label_467")
+    @FindBy(id = "select_value_label_466")
     private WebElement numberOfGpuDrpDwn;
 
-    @FindBy(id = "select_option_479")
+    @FindBy(id = "select_option_477")
     private WebElement gpuQuantity;
 
-    @FindBy(id = "select_value_label_424")
+    @FindBy(id = "select_value_label_425")
     private WebElement localSsdDrpDwn;
 
-    @FindBy(id = "select_option_451")
+    @FindBy(id = "select_option_452")
     private WebElement localSsdValue;
 
-    @FindBy(id = "select_value_label_90")
+    @FindBy(id = "select_value_label_91")
     private WebElement datacenterLocationDrpDwn;
 
-    @FindBy(id = "select_option_230")
+    @FindBy(id = "select_option_231")
     private WebElement frankfurtDatacenterLocation;
 
     @FindBy(xpath = "//*[@id=\"mainForm\"]//div[21]/button")
@@ -97,7 +98,7 @@ public class PricingCalculatorPage extends AbstractPage {
     @FindBy(id = "dialogContent_549")
     private WebElement emailEstimateTab;
 
-    @FindBy(id = "input_454")
+    @FindBy(id = "input_458")
     private WebElement emailAddressField;
 
     @FindBy(xpath = "//button[contains(text(), 'Send Email')]")
@@ -190,18 +191,21 @@ public class PricingCalculatorPage extends AbstractPage {
         log.info("Opening Send to Email tab");
         fluentWait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(cloudSideFrame));
         fluentWait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt((myFrame)));
+        Highlighter.HighlightElement(driver, emailEstimateBtn);
         emailEstimateBtn.click();
         fluentWait.until(ExpectedConditions.visibilityOf(emailAddressField));
     }
 
     public void enterEmailAddress(String emailAddress) {
         log.info("Entering email address");
+        Highlighter.HighlightElement(driver, emailAddressField);
         emailAddressField.click();
         emailAddressField.sendKeys(emailAddress);
     }
 
     public void clickSendEmailBtn() {
         log.info("Sending estimation to the entered email");
+        Highlighter.HighlightElement(driver, sendEmailBtn);
         sendEmailBtn.click();
     }
 

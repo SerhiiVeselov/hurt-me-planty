@@ -1,49 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-02-03T17:10:52 EET" name="Main testng" finished-at="2023-02-03T17:13:24 EET" duration-ms="151649">
+  <suite started-at="2023-02-28T11:03:29 EET" name="Extended testng" finished-at="2023-02-28T11:03:56 EET" duration-ms="26874">
     <groups>
     </groups>
-    <test started-at="2023-02-03T17:10:52 EET" name="GoogleCloud" finished-at="2023-02-03T17:13:24 EET" duration-ms="151649">
-      <class name="testng.GoogleCloudTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:testng.GoogleCloudTest@3f197a46]" started-at="2023-02-03T17:10:45 EET" name="setUp" finished-at="2023-02-03T17:10:52 EET" duration-ms="6574" status="PASS">
+    <test started-at="2023-02-28T11:03:29 EET" name="SendEstimationToEmail" finished-at="2023-02-28T11:03:56 EET" duration-ms="26874">
+      <class name="testng.SendEstimationToEmailTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testng.SendEstimationToEmailTest@5e82df6a]" started-at="2023-02-28T11:03:25 EET" name="setUp" finished-at="2023-02-28T11:03:29 EET" duration-ms="3633" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="openPricingCalculator()[pri:1, instance:testng.GoogleCloudTest@3f197a46]" started-at="2023-02-03T17:10:52 EET" name="openPricingCalculator" finished-at="2023-02-03T17:11:31 EET" duration-ms="39287" status="PASS">
+        <test-method signature="sendEstimationToEmail()[pri:0, instance:testng.SendEstimationToEmailTest@5e82df6a]" started-at="2023-02-28T11:03:29 EET" name="sendEstimationToEmail" finished-at="2023-02-28T11:03:56 EET" duration-ms="26814" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- openPricingCalculator -->
-        <test-method signature="fillCalculationForm()[pri:2, instance:testng.GoogleCloudTest@3f197a46]" started-at="2023-02-03T17:11:31 EET" name="fillCalculationForm" finished-at="2023-02-03T17:11:49 EET" duration-ms="17824" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- fillCalculationForm -->
-        <test-method signature="verifyProvisioningModel()[pri:3, instance:testng.GoogleCloudTest@3f197a46]" started-at="2023-02-03T17:11:49 EET" name="verifyProvisioningModel" finished-at="2023-02-03T17:12:06 EET" duration-ms="16316" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyProvisioningModel -->
-        <test-method signature="verifyInstanceType()[pri:4, instance:testng.GoogleCloudTest@3f197a46]" started-at="2023-02-03T17:12:06 EET" name="verifyInstanceType" finished-at="2023-02-03T17:12:25 EET" duration-ms="19125" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyInstanceType -->
-        <test-method signature="verifyRegion()[pri:5, instance:testng.GoogleCloudTest@3f197a46]" started-at="2023-02-03T17:12:25 EET" name="verifyRegion" finished-at="2023-02-03T17:12:48 EET" duration-ms="23784" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyRegion -->
-        <test-method signature="verifyLocalSsd()[pri:6, instance:testng.GoogleCloudTest@3f197a46]" started-at="2023-02-03T17:12:48 EET" name="verifyLocalSsd" finished-at="2023-02-03T17:13:06 EET" duration-ms="17828" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyLocalSsd -->
-        <test-method signature="verifyCalculatedCost()[pri:7, instance:testng.GoogleCloudTest@3f197a46]" started-at="2023-02-03T17:13:06 EET" name="verifyCalculatedCost" finished-at="2023-02-03T17:13:24 EET" duration-ms="17388" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyCalculatedCost -->
-        <test-method is-config="true" signature="stopBrowser()[pri:0, instance:testng.GoogleCloudTest@3f197a46]" started-at="2023-02-03T17:13:24 EET" name="stopBrowser" finished-at="2023-02-03T17:13:27 EET" duration-ms="3302" status="PASS">
+        </test-method> <!-- sendEstimationToEmail -->
+        <test-method is-config="true" signature="stopBrowser()[pri:0, instance:testng.SendEstimationToEmailTest@5e82df6a]" started-at="2023-02-28T11:03:56 EET" name="stopBrowser" finished-at="2023-02-28T11:03:56 EET" duration-ms="437" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- stopBrowser -->
-      </class> <!-- testng.GoogleCloudTest -->
-    </test> <!-- GoogleCloud -->
-  </suite> <!-- Main testng -->
+      </class> <!-- testng.SendEstimationToEmailTest -->
+    </test> <!-- SendEstimationToEmail -->
+  </suite> <!-- Extended testng -->
 </testng-results>
