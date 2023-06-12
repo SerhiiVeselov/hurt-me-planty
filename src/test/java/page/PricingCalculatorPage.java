@@ -26,52 +26,52 @@ public class PricingCalculatorPage extends AbstractPage {
     @FindBy(id = "myFrame")
     private WebElement myFrame;
 
-    @FindBy(id = "input_93")
+    @FindBy(id = "input_96")
     private WebElement numberOfInstancesField;
 
-    @FindBy(css = "#select_value_label_85")
+    @FindBy(css = "#select_value_label_88")
     private WebElement operatingSystemDrpDwn;
 
-    @FindBy(id = "select_option_95")
+    @FindBy(id = "select_option_98")
     private WebElement debianOperatingSystem;
 
-    @FindBy(css = "#select_value_label_86")
+    @FindBy(css = "#select_value_label_89")
     private WebElement provisioningModelDrpDwn;
 
-    @FindBy(id = "select_option_109")
+    @FindBy(id = "select_option_112")
     private WebElement spotProvisioningModel;
 
-    @FindBy(css = "#select_value_label_89")
+    @FindBy(css = "#select_value_label_92")
     private WebElement machineTypeDrpDwn;
 
-    @FindBy(id = "select_option_431")
+    @FindBy(id = "select_option_452")
     private WebElement n1Standard8MachineType;
 
     @FindBy(xpath = "//md-checkbox[@ng-model='listingCtrl.computeServer.addGPUs']")
     private WebElement addGpuCheckBox;
 
-    @FindBy(id = "select_467")
+    @FindBy(id = "select_488")
     private WebElement gpuTypeDrpDwn;
 
-    @FindBy(id = "select_option_474")
+    @FindBy(id = "select_option_495")
     private WebElement nVidiaTeslaV100Gpu;
 
-    @FindBy(id = "select_value_label_466")
+    @FindBy(id = "select_value_label_487")
     private WebElement numberOfGpuDrpDwn;
 
-    @FindBy(id = "select_option_477")
-    private WebElement gpuQuantity;
+    @FindBy(id = "select_option_499")
+    private WebElement gpuQuantity; //2
 
-    @FindBy(id = "select_value_label_425")
+    @FindBy(id = "select_value_label_446")
     private WebElement localSsdDrpDwn;
 
-    @FindBy(id = "select_option_452")
-    private WebElement localSsdValue;
+    @FindBy(id = "select_option_473")
+    private WebElement localSsdValue; //2x375 GB
 
-    @FindBy(id = "select_value_label_91")
+    @FindBy(id = "select_value_label_94")
     private WebElement datacenterLocationDrpDwn;
 
-    @FindBy(id = "select_option_231")
+    @FindBy(id = "select_option_254")
     private WebElement frankfurtDatacenterLocation;
 
     @FindBy(xpath = "//*[@id=\"mainForm\"]//div[21]/button")
@@ -95,10 +95,10 @@ public class PricingCalculatorPage extends AbstractPage {
     @FindBy(id = "Email Estimate")
     private WebElement emailEstimateBtn;
 
-    @FindBy(id = "dialogContent_549")
+    @FindBy(id = "dialogContent_494")
     private WebElement emailEstimateTab;
 
-    @FindBy(id = "input_458")
+    @FindBy(id = "input_479")
     private WebElement emailAddressField;
 
     @FindBy(xpath = "//button[contains(text(), 'Send Email')]")

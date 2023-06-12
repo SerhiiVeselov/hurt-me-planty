@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-02-28T11:03:29 EET" name="Extended testng" finished-at="2023-02-28T11:03:56 EET" duration-ms="26874">
+  <suite started-at="2023-06-12T15:18:27 EEST" name="Extended testng" finished-at="2023-06-12T15:18:45 EEST" duration-ms="17406">
     <groups>
     </groups>
-    <test started-at="2023-02-28T11:03:29 EET" name="SendEstimationToEmail" finished-at="2023-02-28T11:03:56 EET" duration-ms="26874">
+    <test started-at="2023-06-12T15:18:27 EEST" name="SendEstimationToEmail" finished-at="2023-06-12T15:18:45 EEST" duration-ms="17406">
       <class name="testng.SendEstimationToEmailTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:testng.SendEstimationToEmailTest@5e82df6a]" started-at="2023-02-28T11:03:25 EET" name="setUp" finished-at="2023-02-28T11:03:29 EET" duration-ms="3633" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testng.SendEstimationToEmailTest@15eb5ee5]" started-at="2023-06-12T15:18:25 EEST" name="setUp" finished-at="2023-06-12T15:18:27 EEST" duration-ms="2604" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="sendEstimationToEmail()[pri:0, instance:testng.SendEstimationToEmailTest@5e82df6a]" started-at="2023-02-28T11:03:29 EET" name="sendEstimationToEmail" finished-at="2023-02-28T11:03:56 EET" duration-ms="26814" status="PASS">
+        <test-method signature="sendEstimationToEmail()[pri:0, instance:testng.SendEstimationToEmailTest@15eb5ee5]" started-at="2023-06-12T15:18:27 EEST" name="sendEstimationToEmail" finished-at="2023-06-12T15:18:45 EEST" duration-ms="17372" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- sendEstimationToEmail -->
-        <test-method is-config="true" signature="stopBrowser()[pri:0, instance:testng.SendEstimationToEmailTest@5e82df6a]" started-at="2023-02-28T11:03:56 EET" name="stopBrowser" finished-at="2023-02-28T11:03:56 EET" duration-ms="437" status="PASS">
+        <test-method is-config="true" signature="stopBrowser()[pri:0, instance:testng.SendEstimationToEmailTest@15eb5ee5]" started-at="2023-06-12T15:18:45 EEST" name="stopBrowser" finished-at="2023-06-12T15:18:45 EEST" duration-ms="250" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- stopBrowser -->
