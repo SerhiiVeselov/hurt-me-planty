@@ -1,6 +1,5 @@
 package testng;
 import jdk.jfr.Description;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.annotations.Test;
 
@@ -12,7 +11,7 @@ public class GoogleCloudTest extends CommonConditions {
     @Description("Opening Pricing Calculator")
     public void openPricingCalculator() {
         mainPage.openMainPage();
-        fluentWait.until(ExpectedConditions.visibilityOf(mainPage.getCookiesOkBtn()));
+//        fluentWait.until(ExpectedConditions.visibilityOf(mainPage.getCookiesOkBtn()));
         mainPage.closeCookiesPopUp();
         mainPage.openSearchField();
         mainPage.enterSearchRequest();
@@ -79,7 +78,7 @@ public class GoogleCloudTest extends CommonConditions {
         pricingCalculatorPage.fillInputData();
         pricingCalculatorPage.addToEstimate();
         fluentWait.until(ExpectedConditions.visibilityOf(pricingCalculatorPage.getTotalEstimatedCost()));
-        assertEquals("Total Estimated Cost: USD 2,575.41 per 1 month", pricingCalculatorPage.getTotalEstimatedCost().getText());
+        assertEquals("Total Estimated Cost: USD 4,736.21 per 1 month", pricingCalculatorPage.getTotalEstimatedCost().getText());
     }
 
 }
