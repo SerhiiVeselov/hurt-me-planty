@@ -8,7 +8,6 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.FluentWait;
 import util.Highlighter;
-
 import java.util.ArrayList;
 
 @Getter
@@ -221,4 +220,5 @@ public class PricingCalculatorPage extends AbstractPage {
         selectLocalSsd();
         selectDatacenterLocation();
     }
+
 }

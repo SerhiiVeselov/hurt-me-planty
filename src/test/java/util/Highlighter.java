@@ -12,12 +12,10 @@ public class Highlighter {
 
         js.executeScript("arguments[0].setAttribute('style', 'background: yellow; border: 2px solid red;');", element);
 
-        try
-        {
+        try {
             Thread.sleep(500);
         }
         catch (InterruptedException e) {
-
             System.out.println(e.getMessage());
         }
 
