@@ -11,7 +11,6 @@ public class GoogleCloudTest extends CommonConditions {
     @Description("Opening Pricing Calculator")
     public void openPricingCalculator() {
         mainPage.openMainPage();
-//        fluentWait.until(ExpectedConditions.visibilityOf(mainPage.getCookiesOkBtn()));
         mainPage.closeCookiesPopUp();
         mainPage.openSearchField();
         mainPage.enterSearchRequest();
