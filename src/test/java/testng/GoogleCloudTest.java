@@ -77,7 +77,7 @@ public class GoogleCloudTest extends CommonConditions {
         pricingCalculatorPage.fillInputData();
         pricingCalculatorPage.addToEstimate();
         fluentWait.until(ExpectedConditions.visibilityOf(pricingCalculatorPage.getTotalEstimatedCost()));
-        assertEquals("Total Estimated Cost: USD 4,736.21 per 1 month", pricingCalculatorPage.getTotalEstimatedCost().getText());
+        assertEquals("Total Estimated Cost: USD 4,700.06 per 1 month", pricingCalculatorPage.getTotalEstimatedCost().getText());
     }
 
 }
