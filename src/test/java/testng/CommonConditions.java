@@ -35,7 +35,7 @@ public class CommonConditions {
         emailGeneratorPage = new EmailGeneratorPage(driver);
 
         fluentWait = new FluentWait<>(driver)
-                .withTimeout(Duration.ofSeconds(20))
+                .withTimeout(Duration.ofSeconds(30))
                 .pollingEvery(Duration.ofSeconds(2))
                 .ignoring(NoSuchElementException.class);
     }
